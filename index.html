@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> IQuizYou  </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset ="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://kit.fontawesome.com/2dc63031cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz"  style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeEstim"></div>
+                <div id="timeEstim"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="score" style="display: none"></div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
